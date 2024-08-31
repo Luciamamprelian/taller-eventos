@@ -13,6 +13,11 @@
             height: 100vh;
             margin: 0;
         }
+        .container {
+            padding: 5px;
+            background-color: green;
+            display: inline-block; /* Para que el tamaño del div se ajuste al contenido */
+        }
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -21,12 +26,10 @@
     </style>
 </head>
 <body>
-    <button onclick="saludar()">Saludar</button>
+    <div class="container">
+        <button id="saludarButton">Saludar</button>
+    </div>
 
-    <script>
-        function saludar() {
-            alert('¡Hola!');
-        }
-    </script>
+    <script src="eventos.js"></script>
 </body>
 </html>
